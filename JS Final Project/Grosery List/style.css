@@ -1,0 +1,72 @@
+.header, .container {
+    display: flex;
+    justify-content: center;
+}
+
+h1 {
+    font-size: 60px;
+    background: linear-gradient(to left, #CEE5D0, #DAD992);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+
+.inputField {
+    padding: 10px;
+    width: 40%;
+    border: none;
+    font-size: 20px;
+    background-color: #FFF1AF;
+}
+
+.btn {
+    padding: 15px;
+    background: #F2F013;
+    border: none;
+}
+
+body {
+    background-image: url(photo2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+    background-position: center;
+    background-color: #C2F784;
+}
+
+.toBuyAdded {
+    background-color: #C2F784;
+    list-style-type: none;
+    height: 50px;
+    width: 40%;
+    text-align: center;
+    font-size: 20px;
+    border-bottom: 1px solid #5F7A61;
+
+}
+
+.toBuyContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.toBuyCompleted {
+    background-color: #D5EEBB;
+    color: #000000;
+    font-weight: bold;
+    text-decoration: line-through;
+    transition: all 2s ease;
+}
+
+@media all and (max-width: 800px) {
+    h1{
+        font-size: 40px;
+    }
+
+}
+
+@media all and (max-width: 500px) {
+    h1 {
+        font-size: 30px;
+    }
+}

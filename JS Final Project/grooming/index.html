@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+    
+<div id="main">
+
+    <form>
+    <h1>Calculate your price!</h1>
+<span>
+    <label id="label">Grooming</label>
+    <input id="grooming" class="service" type="text" placeholder="Grooming">
+</span>
+
+<span>
+    <label id="label">Bath</label>
+    <input id="bath" class="service" type="text" placeholder="Bath">
+</span>
+
+<span>
+    <label id="label">Nail trim</label>
+    <input id="nail" class="service" type="text" placeholder="Nail trip">
+</span>
+
+<span>
+    <label id="label">Teeth-brushing</label>
+    <input id="teeth" class="service" type="text" placeholder="Teeth-brushing">
+</span>
+
+<p class="p1">💗 Did you like our service? 💗</p>
+<button id="addTip">Add a tip!</button>
+<select id="tip">
+   <option disabled>Select an option</option>
+   <option value="0.30">Wow! 30% 💗</option>
+   <option value="0.20">Good service! 20% 💙</option>
+   <option value="0.10">It was OK! 10% 🙂</option>
+   <option value="0.00" selected>No tip! 🙅‍♀️</option>
+</select>
+
+<button id="btn">Calculate</button>
+
+
+
+
+</form>
+
+<div id="showTotalAmountToPay">
+    <div id="totalPrice">
+        <p>Price</p>
+        <span>$</span>
+        <span id="price"></span>
+        <span>per customer</span>
+     </div>
+
+    <div id="totalTip">
+       <p>Tip</p>
+       <span>$</span>
+       <span id="tipPerCustomer"></span>
+       <span>per customer</span>
+    </div>
+
+    <div id="totalAmount">
+       <p>Total</p>
+       <span>$</span>
+       <span id="priceAndTip"></span>
+       <span>per customer</span>
+    </div>
+ </div>
+
+
+</div>
+
+
+<script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/ScrollTrigger.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/ScrollToPlugin.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/TextPlugin.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>

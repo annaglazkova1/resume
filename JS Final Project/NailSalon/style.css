@@ -1,0 +1,128 @@
+.heading {
+    display: flex;
+    justify-content: center;
+}
+
+body {
+    background-color: #F3F0D7;
+}
+
+h1,h3 {
+    font-family: 'Kaushan Script', cursive;
+    font-size: 60px;
+}
+
+.one {
+    background-image: url(1.jpg);
+}
+.two {
+    background-image: url(2.jpg);
+}
+.three{
+    background-image: url(3.jpg);
+}
+.four {
+    background-image: url(4.jpg);
+}
+.five {
+    background-image: url(5.jpg);
+}
+.six {
+    background-image: url(6.jpg);
+}
+
+.item {
+    height: 90vh;
+    background-size: cover;
+    background-position: center;
+    font-family: 'Kaushan Script', cursive;
+    flex: 1;
+    margin: 5px;
+    position: relative;
+    }
+
+    .container {
+        display: flex;
+    }
+
+    h4 {
+        position: absolute;
+        top: 15px;
+        left: 40px;
+        background-color: #D3E4CD;
+        color: #3A6351;
+        opacity: 0;
+    }
+
+    .par {
+        position: absolute;
+        top: 100px;
+        left: 40px;
+        background-color: #D3E4CD;
+        color: #3A6351;
+        opacity: 0;
+    }
+
+    .price {
+        position: absolute;
+        bottom: 40px;
+        left: 40px;
+        background-color: #D3E4CD;
+        color: #3A6351;
+        opacity: 0;
+    }
+
+    .selected {
+        flex: 4;
+    }
+
+    .selected h4 {
+        font-size: 35px;
+        transition:all 1s ease-in;
+        opacity: 1;
+
+    }
+
+    .selected .par {
+        font-size: 20px;
+        transition:all 1s ease-in;
+        opacity: 1;
+    }
+
+    .selected .price {
+        font-size: 25px;
+        transition:all 1s ease-in;
+        opacity: 1;
+    }
+
+    label {
+        font-size: 20px;
+        font-family: 'Kaushan Script', cursive;
+    }
+
+    .text-input {
+        background-color: #F3F0D7;
+        border: none;
+        padding: 10px 20px;
+    }
+
+    .btn {
+        background-color: #D3E4CD;
+        font-size: 30px;
+        font-family: 'Kaushan Script', cursive;
+        padding-left: 100px;
+        padding-right: 100px;
+        border: none;
+    }
+
+
+@media all and (max-width: 500px) {
+    .container {
+        flex-direction: column;
+        height: 100vh
+    }
+
+    h1, h3 {
+        font-size: 30px;
+      }
+}

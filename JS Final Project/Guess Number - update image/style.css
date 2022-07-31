@@ -1,0 +1,93 @@
+body {
+    background-image: url("image.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #feffff;
+    min-height: 100vh;
+    width: 100%;
+    background-position: right bottom;
+}    
+
+h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+}
+
+#container {
+    width: 40%;
+    padding: 20px;
+    margin-top: 100px;
+    border-radius: 30px;
+}
+
+#guess {
+    padding: 10px;
+    width: 60%;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+    border: 3px solid #674be6;
+    border-radius: 30px;
+}
+
+#btn {
+    margin-top: 20px;
+    border: none;
+    border-radius: 20px;
+    font-family: 'Montserrat', sans-serif;
+    color: #674be6;
+    background-color: rgb(240, 240, 240);
+    padding: 20px;
+}
+
+@media all and (max-width:500px) {
+    #guess {
+        width: 120px;
+        padding: 5px;
+        font-size: 6px;
+    }
+
+    h3 {
+        font-size: 10px;
+    }
+
+
+}
+
+@media all and (max-width:800px) {
+    #guess {
+        width: 80px;
+        padding: 5px;
+        font-size: 10px;
+    }
+
+    h3 {
+        font-size: 15px;
+    }
+    #container {
+        width: 60%;
+    }
+
+    #btn {
+        padding: 10px;
+    }
+}
+
+@media all and (max-width:500px) {
+    #guess {
+        width: 80px;
+        padding: 5px;
+        font-size: 10px;
+    }
+
+    h3 {
+        font-size: 15px;
+    }
+    #container {
+        width: 60%;
+    }
+
+    #btn {
+        padding: 8px;
+        font-size: 10px;
+    }
+}
